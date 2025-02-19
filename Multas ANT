@@ -1,0 +1,28 @@
+<div style="max-width: 400px; margin: auto; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <h3 style="text-align: center; color: #1d4ed8; font-size: 24px; font-weight: bold; margin-bottom: 15px;">
+        Consulta de Citaciones
+    </h3>
+
+    <label for="documentType" style="display: block; font-weight: bold; color: #333; margin-bottom: 5px;">Seleccione Tipo de Documento</label>
+    <select id="documentType" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 15px;">
+        <option value="cedula">CÉDULA IDENTIDAD</option>
+        <option value="ruc">REGISTRO UNICO CONTRIBUYENTE</option>
+        <option value="pasaporte">PASAPORTE</option>
+        <option value="placa">PLACA</option>
+    </select>
+
+    <label for="value" style="display: block; font-weight: bold; color: #333; margin-bottom: 5px;">Ingrese el Valor</label>
+    <input type="text" id="value" placeholder="Ingrese valor" 
+        style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 15px;">
+
+    <button onclick="redirectToConsultation()" 
+        style="width: 100%; background: #1d4ed8; color: #fff; font-weight: bold; padding: 12px; border: none; border-radius: 5px; cursor: pointer; transition: background 0.3s;">
+        🔍 Consultar
+    </button>
+</div>
+
+<script>
+    function redirectToConsultation() {
+        window.open("https://consultaweb.ant.gob.ec/PortalWEB/paginas/clientes/clp_criterio_consulta.jsp", "_blank");
+    }
+</script>
